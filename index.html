@@ -32,11 +32,11 @@
 
   <div class="nav-container">
     <nav>
-      <img class="logo" src="img/svg/fischerdrei-48-logo-blue.svg" alt="fischerDREI" style="height: 2.25rem;">
+      <a href="#home"><img class="logo" src="img/svg/fischerdrei-48-logo-blue.svg" alt="fischerDREI" style="height: 2.25rem;"></a>
       <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Ausstattung</a>
-        <a href="#">Lage</a>
+        <a href="#home">Home</a>
+        <a href="#ausstattung">Ausstattung</a>
+        <a href="#lage">Lage</a>
         <a href="#">Buchen
           <span class="tooltiptext">Aufgrund der aktellen Situation in Bezug auf Corona sind <strong> derzeit leider
               keine Buchungen möglich</strong>.</span>
@@ -46,7 +46,7 @@
   </div>
 
   <div class="wrapper">
-    <div class="spacer" style="margin-top: 7rem;"></div>
+    <div class="spacer" id="home" style="height: 7rem;"></div>
     <div class="hero">
       <img src="img/photos/fisherdrei-hero-500.jpg" alt="Hausfacade">
       <div class="herotext">
@@ -57,7 +57,8 @@
         <p>Es ist der idealen Standort für Deinen Urlaub an der schleswig-holsteinischen Ostseeküste.</p>
       </div>
     </div>
-    <section class="ausstattung">
+    <div class="spacer" id="ausstattung" style="height: 5rem;"></div>
+    <section>
       <h2>Ausstattung</h2>
       <div class="texte">
         <!-- <h3>Außen</h3> -->
@@ -70,12 +71,11 @@
           jeweils einem Einzelbett, sowie das dazwischenliegende Badezimmer. Im lichtdurchfluteten Dachgeschoss befinden
           sich ein Doppelbett sowie eine gemütliche Sofaecke.</p>
       </div>
-
     </section>
-    <section class="lage">
+    <div class="spacer" id="lage" style="height: 5rem;"></div>
+    <section>
       <h2>Himmlische Lage</h2>
-
-      <div class="texte">
+      <div class="texte" style="grid-column: 2 / span2;">
         <!-- <h3>Außen</h3> -->
         <p><span class="f3heavy">fischer</span><span class="f3light">DREI</span> liegt in der Fischerstraße von Neustadt
           in Holstein. Es ist die Straße, die direkt auf den Hafen zuführt und in alter Tradition der Fischer-Leute
@@ -100,7 +100,8 @@
       </div>
       <img src="img/photos/anfahrt-neustadt-350.jpg" alt="placeholderimage" width="100%">
     </section>
-    <section class="archi">
+    <div class="spacer" id="lage" style="height: 5rem;"></div>
+    <section>
       <h2>Architektur</h2>
       <div class="texte">
         <h3>Innen</h3>
@@ -117,9 +118,7 @@
         <p>Wenn Du gerne kochst, werden Dir sowohl das moderne Gas-Kochfeld als auch der nagelneue Ofen mit
           Dampfgarfunktion ins Auge stechen und die Lust am Kochen in Deinem Urlaub noch einmal erhöhen.</p>
       </div>
-
-
-      <div class="texte">
+      <div class="texte" style="grid-column: 2 / span2;">
         <h3>Außen</h3>
         <p>Auf alten Steinfundamenten von _____ gegründet, wurde fischerDREI Ende der 60er Jahre auf nur vier Metern
           Breite neu errichtet. In den Jahren 2019 – 2021 wurde das Haus kernsaniert und liebevoll in seine heutige
@@ -133,11 +132,8 @@
           sind 2-flüglig und mit den klassischen Anwerfern und Sturmhaken versehen.</p>
       </div>
     </section>
-    <section class="buchen">
-
-    </section>
-
   </div>
+
   <footer>
     <div>
       Impressum
@@ -169,7 +165,7 @@
           <br>
           Dieses Impressum wurde freundlicherweise von jurarat.de zur Verfügung gestellt.
         </p>
-        <div class="imp-button" >Impressum schließen</div>
+        <div class="imp-button">Impressum schließen</div>
       </div>
     </div>
   </div>
