@@ -143,6 +143,7 @@ nav {
 
 .menu a {
   /* border: 1px solid red; */
+  /* border-radius: 1.5rem; */
   color: var(--clr-accent2);
   font-size: 1rem;
   margin: 0 0 0 .5rem;
@@ -153,13 +154,12 @@ nav {
 
 .menu a:hover {
   background-color: var(--clr-bg-main);
-  border-radius: 1.5rem;
   /* color: rgb(255, 255, 255); */
 }
 
 .menu a:last-child {
   background-color: var(--clr-accent1);
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
   color: #8b8b8b;
   user-select: none;
   cursor: default;
@@ -198,10 +198,10 @@ nav {
 /*----------------------------------------------------------------------------*/
 
 .wrapper {
-  display: grid;
   background-color: var(--clr-bg-main);
   background-image: url(../img/svg/f3-background.svg);
   background-size: contain;
+  display: grid;
   max-width: var(--wid-max);
   margin: 0 auto;
 }
@@ -240,7 +240,9 @@ section {
   font-weight: 400;
 }
 
-
+/*----------------------------------------------------------------------------*/
+/* FOOTER 
+-----------------------------------------------------------------------------*/
 
 footer {
   background-color: var(--clr-accent2);
@@ -250,4 +252,61 @@ footer {
   font-size: 1rem;
   padding: .5rem;
   place-items: center;
+}
+
+.imp-wrap {
+  background-color: yellow;
+  height: 0px;
+}
+
+.imprintToggle {
+  display: grid;
+  max-width: var(--wid-max);
+  margin: 0 auto;
+  place-items: center;
+  position: relative;
+}
+
+.imprintToggle input {
+  bottom: 2rem;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+  opacity: 0;
+  top: -2.125rem;
+  z-index: 2;
+}
+
+.imprintToggle input:checked {
+  top: -4.5rem;
+  height: 40px;
+  width: 200px;
+}
+
+.f3-imprint {
+  background-color: var(--clr-bg-main);
+  /* border: 1px dashed blue; */
+  box-shadow: 5px -5px 15px rgba(0, 0, 0, .2);
+  position: absolute;
+  bottom: .3rem;
+  padding: 1.725rem 1.725rem 0 1.725rem;
+  visibility: hidden;
+  width: var(--wid-med);
+  font-size: 1rem;
+
+}
+
+.imp-button {
+  background-color: var(--clr-accent2);
+  width: 160px;
+  margin: 0 auto 2rem;
+  padding: .5rem 1rem;
+  color: white;
+  font-weight: 900;
+  /* border-radius: 1.5rem; */
+}
+
+.imprintToggle input:checked~.f3-imprint {
+  visibility: visible;
 }
