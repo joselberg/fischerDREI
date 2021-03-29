@@ -78,6 +78,7 @@
 /* ELEMENTALS 
 -----------------------------------------------------------------------------*/
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -239,6 +240,15 @@ section {
 
 .f3light {
   font-weight: 400;
+}
+
+.steckbrief {
+  align-self: start;
+  border:3px solid var(--clr-accent1);
+  color: var(--clr-accent2);
+  font-size: 1.3rem; 
+  font-weight: 400;
+  margin-top: 1.5rem;
 }
 
 /*----------------------------------------------------------------------------*/
