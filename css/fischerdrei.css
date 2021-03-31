@@ -138,6 +138,7 @@ nav {
   /* border: 1px solid red; */
   grid-column: 1;
   margin: 2rem;
+  height: 2.25rem;
 }
 
 .menu {
@@ -342,6 +343,10 @@ footer {
 
   .nav-container {
     position: relative;
+  }
+
+  .logo {
+    height: 5vw;
   }
 
   .menu {
