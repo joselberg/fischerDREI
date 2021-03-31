@@ -25,11 +25,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
+  <span id="home"></span>
   <div class="nav-container">
     <nav>
       <a href="#home"><img class="logo" src="img/svg/fischerdrei-48-logo-blue.svg" alt="fischerDREI"
@@ -47,22 +46,20 @@
   </div>
 
   <div class="wrapper">
-    <div class="spacer" id="home" style="height: 7rem;"></div>
+    <div class="spacer" style="height: 7rem;"></div>
     <div class="hero">
       <img src="img/photos/fisherdrei-hero-500.jpg" alt="Hausfacade">
-      <div class="herotext">
-        <h1>Dein neues Ferienhaus am Hafen von Neustadt in Holstein!</h1>
-        <p><span class="f3heavy">fischer</span><span class="f3light">DREI</span> ermöglicht Dir einen Urlaub in
-          Hafennähe mit gleichzeitiger Anbindung an Altstadt und die einfach
-          erreichbaren Strände in der Umgebung von Neustadt.</p>
-        <p>Es ist der idealen Standort für Deinen Urlaub an der schleswig-holsteinischen Ostseeküste.</p>
-      </div>
+      <h1>Dein neues Ferienhaus am Hafen von Neustadt in Holstein!</h1>
+      <p><span class="f3heavy">fischer</span><span class="f3light">DREI</span> ermöglicht Dir einen Urlaub in
+        Hafennähe mit gleichzeitiger Anbindung an Altstadt und die einfach erreichbaren Strände in der Umgebung von
+        Neustadt.<br><br>Es ist der idealen Standort für Deinen Urlaub an der schleswig-holsteinischen Ostseeküste.</p>
     </div>
-    <div class="spacer" id="ausstattung" style="height: 5rem;"></div>
+    <span id="ausstattung"></span>
+    <div class="spacer" style="height: 5rem;"></div>
     <section>
       <h2>Ausstattung</h2>
       <div class="steckbrief">
-        <h3 style="padding-left: 1rem; margin-top: 1rem;">Steckbrief</h3>
+        <h3>Steckbrief</h3>
         <ul>
           <li>5 Betten</li>
           <li>3 Zimmer</li>
@@ -72,7 +69,7 @@
           <li>Handtücher und Bettwäsche inklusive</li>
         </ul>
       </div>
-      <div class="texte">
+      <div class="texte" id="text-ausst">
         <p>ImErdgeschoß von <span class="f3heavy">fischer</span><span class="f3light">DREI</span> befinden sich der
           Eingangsflur mit Garderobe, ein WC und die voll ausgestattete Küche. Hier kannst Du kochen, genießen und
           gemütlich sitzen. Im ersten Obergeschoß befinden sich zwei Schlafzimmer mit einem Doppel- bzw. einem
@@ -89,10 +86,11 @@
           Mietpreis enthalten. Die einmalige Endreinigungsgebühr beträgt 75,- Euro.</p>
       </div>
     </section>
-    <div class="spacer" id="lage" style="height: 5rem;"></div>
+    <span id="lage"></span>
+    <div class="spacer" style="height: 5rem;"></div>
     <section>
       <h2>Tolle Lage</h2>
-      <div class="texte" style="grid-column: 2 / span2;">
+      <div class="texte" id="text-lage">
         <p><span class="f3heavy">fischer</span><span class="f3light">DREI</span> liegt in der Fischerstraße von Neustadt
           in Holstein. Es ist DIE Straße, die DIREKT auf den Hafen
           zuführt und in alter Tradition der Fischer-Leute liegt.</p>
@@ -115,7 +113,7 @@
         </p>
         <br><br><br>
       </div>
-      <img src="img/photos/anfahrt-neustadt-350.jpg" alt="placeholderimage" width="100%">
+      <img id="anfahrt" src="img/photos/anfahrt-neustadt-350.jpg" alt="placeholderimage" width="100%">
     </section>
     <div class="spacer" id="lage" style="height: 5rem;"></div>
     <section>
@@ -137,11 +135,13 @@
         </p>
 
       </div>
-      <div class="texte" style="grid-column: 2 / span2;">
+      <div class="texte" id="text-archi">
         <h3>Architektur innen</h3>
         <p>
-          Das Erdgeschoss besticht bereits beim ersten Eintritt durch die massiven Eichendielen, die einen warmen Empfang
-          bereiten und sofort Wohlfühl-Atmosphäre versprühen. Sie erstrecken sich über den kompletten Bereich inklusive WC
+          Das Erdgeschoss besticht bereits beim ersten Eintritt durch die massiven Eichendielen, die einen warmen
+          Empfang bereiten und sofort Wohlfühl-Atmosphäre versprühen. Sie erstrecken sich über den kompletten Bereich
+          inklusive
+          WC
           und gesamter Küche.
         </p>
         <p>
@@ -171,7 +171,7 @@
     </section>
     <div class="spacer" id="lage" style="height: 5rem;"></div>
   </div>
-  
+
   <footer>
     <div>
       Impressum
@@ -201,7 +201,9 @@
           Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
           Gesetzen verantwortlich.<br>
           <br>
-          <span style="font-size: .75rem;">Dieses Impressum wurde freundlicherweise von <a style="text-decoration: none; color: #181818;" href="https://jurarat.de">jurarat.de</a> zur Verfügung gestellt.</span><br><br>
+          <span style="font-size: .75rem;">Dieses Impressum wurde freundlicherweise von <a
+              style="text-decoration: none; color: #181818;" href="https://jurarat.de">jurarat.de</a> zur Verfügung
+            gestellt.</span><br><br>
         </p>
         <div class="imp-button">Impressum schließen</div>
       </div>

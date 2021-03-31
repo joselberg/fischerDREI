@@ -87,6 +87,7 @@ body {
   font-size: 1.125rem;
   font-weight: 300;
   color: var(--clr-black);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -94,6 +95,7 @@ h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
   line-height: 1.4;
+  align-self: end;
 }
 
 h2 {
@@ -213,13 +215,18 @@ nav {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr fr 2fr;
   justify-items: center;
   padding: 1.75rem 5rem 0 1.75rem;
-
 }
 
 .hero img {
-  max-width: 350px;
+  max-width: 100%;
+  grid-row: span 2;
+}
+
+.hero p {
+  align-self: start;
 }
 
 section {
@@ -234,6 +241,11 @@ section {
   grid-column: span 2;
 }
 
+#text-lage,
+#text-archi {
+  grid-column: 2 / span 2;
+}
+
 .f3heavy {
   font-weight: 900;
 }
@@ -244,11 +256,16 @@ section {
 
 .steckbrief {
   align-self: start;
-  border:3px solid var(--clr-accent1);
+  border: 3px solid var(--clr-accent1);
   color: var(--clr-accent2);
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   font-weight: 400;
   margin-top: 1.5rem;
+}
+
+.steckbrief h3 {
+  padding-left: 1rem; 
+  margin-top: 1rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -303,9 +320,8 @@ footer {
   bottom: .3rem;
   padding: 1.725rem 1.725rem 0 1.725rem;
   visibility: hidden;
-  width: var(--wid-med);
+  max-width: var(--wid-med);
   font-size: 1rem;
-
 }
 
 .imp-button {
@@ -320,4 +336,50 @@ footer {
 
 .imprintToggle input:checked~.f3-imprint {
   visibility: visible;
+}
+
+@media only screen and (max-width: 810px) {
+
+  .nav-container {
+    position: relative;
+  }
+
+  .menu {
+    margin: 1rem 2rem 1rem 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: .125rem;
+  }
+
+  .hero img {
+
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  h2,
+  #anfahrt,
+  #text-archi,
+  #text-lage,
+  .texte,
+  .steckbrief,
+  .hero p {
+    grid-column: 1 / -1;
+  }
+
+  #anfahrt {
+    max-width: 50vw;
+  }
+
+  .steckbrief {
+    margin-top: 0;
+  }
+
+  .spacer {
+    display: none;
+  }
 }
